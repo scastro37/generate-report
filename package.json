@@ -1,0 +1,40 @@
+{
+  "name": "@scastro37/generate-report",
+  "version": "1.0.0",
+  "description": "generate report csv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier \"**/*.{js,jsx,ts,tsx}\" --write",
+    "lint-global": "echo \"Prettier is running...\" && prettier \"**/*.{js,jsx,ts,tsx}\" --write && echo \"ESlint is running...\" && eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scastro37/generate-report.git"
+  },
+  "keywords": [],
+  "author": "Sebastian Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scastro37/generate-report/issues"
+  },
+  "homepage": "https://github.com/scastro37/generate-report#readme",
+  "peerDependencies": {
+    "csv-writer": "1.6.0",
+    "@condor-labs/logger": "1.0.2"
+  },
+  "devDependencies": {
+    "@condor-labs/eslint-config": "1.0.3",
+    "@condor-labs/matchbox": "1.1.5",
+    "@condor-labs/prettier-config": "1.0.3",
+    "eslint": "7.23.0",
+    "husky": "6.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint",
+      "prettier --write"
+    ]
+  }
+}
