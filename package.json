@@ -1,6 +1,6 @@
 {
   "name": "@scastro37/generate-report",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generate report csv",
   "main": "index.js",
   "scripts": {
